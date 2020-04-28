@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">DataIsBeautiful</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="guide_book_suggestion">Confused? Don\'t know how to use these arbitrary numbers to
+                                                    express your satisfaction with the product?
+                                                    Use our handy guidebook!</string>
+
+    <string-array name="quick_focus_spinner">
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+    </string-array>
+
+    <string-array name="guide_book">
+        <item>10 -</item>
+        <item>9 - </item>
+        <item>8 -</item>
+        <item>7 -</item>
+        <item>6 - </item>
+        <item>5 - </item>
+        <item>4 - </item>
+        <item>3 - </item>
+        <item>2 - This </item>
+        <item>1 - This product made you crave, if ever so slightly, for the sweet release of death</item>
+        <item>0 - If you could, you would un-birth yourself to avoid this product</item>
+    </string-array>
+
+    <!-- Need to separate to hopeful, pessimistic and neutral-->
+    <string-array name="rating_toasts">
+        <item>Knowing how beautiful data is, it fills you with determination</item>
+        <item>Knowing the sun will rise tomorrow yet again, this beautiful consistency fills you with determination</item>
+        <item>Knowing that Ash finally became a Pokemon master, it fills you with determination</item>
+        <item>Knowing that determination is all it takes to turn your life around, it fills you with determination</item>
+        <item>Knowing someone has to sit down and write these for your selfish pleasure, it fills you with determination</item>
+        <item>Knowing how little your vote influences the statistics in the grand scheme of things, it fills you with an existential crisis</item>
+        <item>Knowing that one day Pluto may be considered a planet again, it fills you with determination</item>
+        <item>Knowing your mug of coffee will be filled once more, it fills you with determination</item>
+        <item>Knowing this too shall pass, it fills you with determination</item>
+        <item>Your perseverance knows no bounds. You stay determined.</item>
+        <item>Seeing how consistent your graph looks, it compels you to fill others with determination</item>
+        <item>Knowing that one day someone may run out of ideas for these, it fills you with terrible dread</item>
+    </string-array>
+</resources>

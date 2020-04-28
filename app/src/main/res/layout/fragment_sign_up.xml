@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7BE0F7FA"
+    tools:context=".Activities.AuthActivity">
+
+    <EditText
+        android:id="@+id/sign_up_email"
+        style="@style/authEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <EditText
+        android:id="@+id/sign_up_password"
+        style="@style/authEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_email"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_email"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_email"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/sign_up_country"
+        style="@style/authEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_password"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_confirm_password"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/sign_up_confirm_password"
+        style="@style/authEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_password"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_password"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_password"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sign_up_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="Sign Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#2C2E3E"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sign_up_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="Email:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#2C2E3E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_up_email"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_password_label"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_password_label"
+        app:layout_constraintTop_toTopOf="@+id/sign_up_email"
+        app:layout_constraintVertical_bias="0.84000003" />
+
+    <TextView
+        android:id="@+id/sign_up_password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="Password:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#2C2E3E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_up_password"
+        app:layout_constraintEnd_toStartOf="@+id/sign_up_password"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sign_up_password" />
+
+    <TextView
+        android:id="@+id/sign_up_confirm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="Confirm:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#2C2E3E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_up_confirm_password"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_password_label"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_password_label"
+        app:layout_constraintTop_toTopOf="@+id/sign_up_confirm_password"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/sign_up_country_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="Country:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#2C2E3E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_up_country"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_password_label"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_password_label"
+        app:layout_constraintTop_toTopOf="@+id/sign_up_country"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <Button
+        android:id="@+id/sign_up_submit_btn"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="Sign Up"
+        android:textColor="#2C2E3E"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_country"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_country"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_gender"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/sign_up_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_country"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_country_label"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_country"
+        app:layout_constraintVertical_bias="0.050000012">
+
+        <RadioButton
+            android:id="@+id/sign_up_radio_btn_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/sign_up_radio_btn_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:text="Female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sign_up_have_an_account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/acme"
+        android:text="Already have an account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#2C2E3E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_submit_btn"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_submit_btn"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_submit_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
